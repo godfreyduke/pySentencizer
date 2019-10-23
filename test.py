@@ -76,14 +76,14 @@ def timeSentencizeWarAndPeace():
 	return stop - start
 
 if __name__ == "__main__":
-	print "Running tests."
+	print("Running tests.")
 	if len(sys.argv) > 1:
 		if sys.argv[1] == "-p":
 			TEST_PERFORMANCE = True	
 		else:
-			print "WARNING: Unknown option",sys.argv[1]
+			print("WARNING: Unknown option",sys.argv[1])
 	else:
-		print "Not testing performance. Use -p to run performance tests."
+		print("Not testing performance. Use -p to run performance tests.")
 
 	doctest.testmod()
 

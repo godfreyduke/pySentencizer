@@ -7,13 +7,13 @@ input = sys.stdin.read()
 
 senticizer = pysentencizer.Sentencizer()
 tokens = senticizer.sentencize(input)
-print tokens
+print(tokens)
 
 for token in tokens:
 	if token.isSentenceStart:
-		print "\n>>> ",
+		print("\n>>> ", end=' ')
 	text = token.getRawText().replace("\n"," ").replace("\r","")
 	sys.stdout.write(text)
 	if token.isParaEnd:
-		print
-print
+		print()
+print()

@@ -26,7 +26,7 @@ Here is a quick example.
 $ python
 >>> import pysentencizer
 >>> sentencizer = pysentencizer.Sentencizer()
->>> print sentencizer.sentencize("Testing.")
+>>> print(sentencizer.sentencize("Testing."))
 ['Testing'/sent_start/para_start/word/capital/verb/VBG, '.'/sent_end/para_end/punc]
 
 The script example.py demonstrates the ability to tokenize and then print
